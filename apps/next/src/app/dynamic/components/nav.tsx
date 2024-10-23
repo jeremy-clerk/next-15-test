@@ -1,8 +1,14 @@
-import { UserButton } from "@clerk/nextjs";
+"use client";
+import { useAuth, UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export default function NavBar() {
+  //not recommended anymore
+  const { isSignedIn } = useAuth();
+
+  if (!isSignedIn) return null;
+
   return (
     <nav className={"px-6 py-2 flex justify-between bg-secondary"}>
       <div className={"flex items-center gap-4"}>
