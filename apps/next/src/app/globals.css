@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root  {
+    --gradient: #E0EAFC;
+
+    --background: 232 53.3% 7.44%;
+    --foreground: 232 8.2% 99.65%;
+
+    --muted: 232 41% 27.900000000000002%;
+    --muted-foreground: 232 8.2% 59.3%;
+
+    --popover: 232 48.6% 12.09%;
+    --popover-foreground: 232 8.2% 99.65%;
+
+    --card: 232 48.6% 12.09%;
+    --card-foreground: 232 8.2% 99.65%;
+
+    --border: 232 41% 27.900000000000002%;
+    --input: 232 41% 27.900000000000002%;
+
+    --primary: 232 82% 93%;
+    --primary-foreground: 232 8.2% 9.3%;
+
+    --secondary: 232 41% 27.900000000000002%;
+    --secondary-foreground: 232 8.2% 99.65%;
+
+    --accent: 232 41% 27.900000000000002%;
+    --accent-foreground: 232 8.2% 99.65%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 232 8.2% 99.65%;
+
+    --ring: 232 82% 93%;
+    --radius: 0.5rem;
+  }
+  .dark  {
+    --gradient: #E0EAFC;
+
+    --background: 232 53.3% 7.44%;
+    --foreground: 232 8.2% 99.65%;
+
+    --muted: 232 41% 27.900000000000002%;
+    --muted-foreground: 232 8.2% 59.3%;
+
+    --popover: 232 48.6% 12.09%;
+    --popover-foreground: 232 8.2% 99.65%;
+
+    --card: 232 48.6% 12.09%;
+    --card-foreground: 232 8.2% 99.65%;
+
+    --border: 232 41% 27.900000000000002%;
+    --input: 232 41% 27.900000000000002%;
+
+    --primary: 232 82% 93%;
+    --primary-foreground: 232 8.2% 9.3%;
+
+    --secondary: 232 41% 27.900000000000002%;
+    --secondary-foreground: 232 8.2% 99.65%;
+
+    --accent: 232 41% 27.900000000000002%;
+    --accent-foreground: 232 8.2% 99.65%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 232 8.2% 99.65%;
+
+    --ring: 232 82% 93%;
+    --radius: 0.5rem;
+  }
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  .bg-gradient { background: var(--gradient) }
+}
