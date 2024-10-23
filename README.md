@@ -1,5 +1,7 @@
 # Demo Next 15 & Clerk V6
 
+_Please note: many patterns here are not best practices, this is for experimentation_
+
 Routes under `/dynamic` are using a `<ClerkProvider dynamic/>` to opt in to [dynamic rendering](https://clerk.com/changelog/2024-10-22-clerk-nextjs-v6#static-rendering-by-default-opt-in-dynamic-and-partial-prerendering-support).
 
 Routes under `/ssr` are using the new default `<ClerkProvider />` that static renders by default.
