@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button";
 
 export default function Index() {
   //not recommended anymore
-  const { isLoaded, isSignedIn, userId } = useAuth();
+  const { isLoaded, isSignedIn } = useAuth();
 
-  if (!isLoaded || !userId) return null;
+  if (!isLoaded) return null;
 
   return (
     <div

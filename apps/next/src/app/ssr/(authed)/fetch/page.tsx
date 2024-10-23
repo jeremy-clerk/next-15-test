@@ -16,6 +16,7 @@ export default async function FetchExample() {
   //There's really no need to fetch from here, this is server side, you could just call the function.
   // However, there's going to be a lot of people with this pattern.
 
+  // Little hack for the cookies & host
   const phraseSet1 = await fetch(
     `${protocol}://${headerList.get("host")}/api/hacker`,
     {
