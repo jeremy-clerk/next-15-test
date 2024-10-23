@@ -9,7 +9,7 @@ Routes under `/ssr` are using the new default `<ClerkProvider />` that static re
 ## Setup
 Copy the `.env.example` file in the `/apps/next` directory to `.env.local` in the `/apps/next` directory.
 
-Past your secret key and publishable key into the `.env.local` file you just created.
+Paste your secret key and publishable key into the `.env.local` file you just created.
 
 ### Install dependencies
 From the root directory: 
@@ -43,7 +43,7 @@ UI Routes:
   - `/standard/sign-in` Page that mounts the standard sign in component
   - `/standard/sign-up` Page that mounts the standard sign up component
   - `/noauth` Page that does not require auth to visit, shows various links
-- `/ssr` lists routes under the dynamic Clerk Provider with links.
+- `/ssr` lists routes under the static Clerk Provider with links.
     - `/fetch` fetches data from the hacker endpoint - one request is designed to fail.
     - `/org/create` Create Organization component
     - `/org/profile` Organization Profile component
