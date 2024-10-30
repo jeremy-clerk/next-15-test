@@ -1,5 +1,3 @@
-import NavBar from "@/app/ssr/components/nav";
-
 export default function AuthedLayout({
   children,
 }: Readonly<{

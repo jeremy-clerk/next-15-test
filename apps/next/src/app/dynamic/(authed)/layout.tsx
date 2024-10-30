@@ -1,5 +1,3 @@
-import NavBar from "@/app/dynamic/components/nav";
-
 export default function AuthedLayout({
   children,
 }: Readonly<{
